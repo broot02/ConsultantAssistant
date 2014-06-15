@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Customers>
+  <Customer id="1">
+    <firstname>Robert</firstname>
+    <lastname>Loblaw</lastname>
+    <phonenumber>(111)111-1111</phonenumber>
+    <address>111 Loblaw St.</address>
+    <city>Loblaw</city>
+    <zip>89001</zip>
+    <state>California</state>
+    <email>bobloblaw@loblawblog.com</email>
+    <mailinglist>true</mailinglist>
+  </Customer>
+  <Customer id="2">
+    <firstname>John</firstname>
+    <lastname>Doe</lastname>
+    <phonenumber>(999)999-9999</phonenumber>
+    <address>111 West Rd</address>
+    <city>Test</city>
+    <zip>48867</zip>
+    <state>Michigan</state>
+    <email>test@test.com</email>
+    <mailinglist>false</mailinglist>
+  </Customer>
+  <Customer id="3">
+    <firstname>John</firstname>
+    <lastname>Doe</lastname>
+    <phonenumber>(999)999-9999</phonenumber>
+    <address>111 West Rd</address>
+    <city>Test</city>
+    <zip>48867</zip>
+    <state>Michigan</state>
+    <email>test@test.com</email>
+    <mailinglist>false</mailinglist>
+  </Customer>
+  <Customer id="4">
+    <firstname>Teri</firstname>
+    <lastname>Root</lastname>
+    <phonenumber>(989)721-9752</phonenumber>
+    <address>407 N. Gould St.</address>
+    <city>Owosso</city>
+    <zip>48867</zip>
+    <state>Michigan</state>
+    <email>terimroot@gmail.com</email>
+    <mailinglist>false</mailinglist>
+  </Customer>
+  <Customer id="5">
+    <firstname>Bob</firstname>
+    <lastname>Test</lastname>
+    <phonenumber>(999)999-9999</phonenumber>
+    <address>11 Test Rd</address>
+    <city>Test</city>
+    <zip>47726</zip>
+    <state>Tennessee</state>
+    <email>test@test.com</email>
+    <mailinglist>false</mailinglist>
+  </Customer>
+  <Customer id="6">
+    <firstname>Jane</firstname>
+    <lastname>Doe</lastname>
+    <phonenumber>(999)999-9999</phonenumber>
+    <address>111 West Rd</address>
+    <city>Test</city>
+    <zip>48867</zip>
+    <state>Michigan</state>
+    <email>test@test.com</email>
+    <mailinglist>false</mailinglist>
+  </Customer>
+  <Customer id="7">
+    <firstname>Joe</firstname>
+    <lastname>Doe</lastname>
+    <phonenumber>(999)999-9999</phonenumber>
+    <address>111 West Rd</address>
+    <city>Test</city>
+    <zip>48867</zip>
+    <state>Michigan</state>
+    <email>test@test.com</email>
+    <mailinglist>false</mailinglist>
+  </Customer>
+  <Customer id="8">
+    <firstname>Brad</firstname>
+    <lastname>Root</lastname>
+    <phonenumber>(989)721-9752</phonenumber>
+    <address>407 N Gould St</address>
+    <city>Owosso</city>
+    <zip>48867</zip>
+    <state>Michigan</state>
+    <email>rootbrad86@gmail.com</email>
+    <mailinglist>false</mailinglist>
+  </Customer>
+  <Customer id="9">
+    <firstname>Test</firstname>
+    <lastname>Test</lastname>
+    <phonenumber>(999)999-9999</phonenumber>
+    <address>405 N Gould St</address>
+    <city>Owosso</city>
+    <zip>48867</zip>
+    <state>Michigan</state>
+    <email>rootbrad@gmail.com</email>
+    <mailinglist>false</mailinglist>
+  </Customer>
+  <Customer id="10">
+    <firstname>Bob</firstname>
+    <lastname>Bob</lastname>
+    <phonenumber>(999)999-9999</phonenumber>
+    <address>11 Bob Rd</address>
+    <city>Bob</city>
+    <zip>49847</zip>
+    <state>Michigan</state>
+    <email>bob@bob.com</email>
+    <mailinglist>false</mailinglist>
+  </Customer>
+  <Customer id="11">
+    <firstname>Test</firstname>
+    <lastname>Test</lastname>
+    <phonenumber>(999)999-9999</phonenumber>
+    <address>2000 E Elm St</address>
+    <city>Tucson</city>
+    <zip>85719</zip>
+    <state>Arizona</state>
+    <email>rootbrad86@gmail.com</email>
+    <mailinglist>false</mailinglist>
+  </Customer>
+</Customers>

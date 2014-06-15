@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="335.0" prefWidth="396.0"
+	xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"
+	fx:controller="root.consultantassistant.frontend.LoginScreen"
+	stylesheets="css/application.css">
+	<top>
+		<VBox id="headingBar" alignment="TOP_CENTER" prefHeight="54.0"
+			prefWidth="100.0" BorderPane.alignment="CENTER">
+			<children>
+				<Label id="heading" contentDisplay="CENTER" text="Login" />
+			</children>
+		</VBox>
+	</top>
+	<center>
+		<GridPane id="group" prefHeight="234.0" prefWidth="353.0"
+			BorderPane.alignment="CENTER">
+			<columnConstraints>
+				<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES"
+					minWidth="10.0" prefWidth="100.0" />
+				<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES"
+					minWidth="10.0" prefWidth="100.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints minHeight="10.0" prefHeight="30.0"
+					vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0"
+					vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0"
+					valignment="CENTER" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0"
+					valignment="CENTER" vgrow="SOMETIMES" />
+			</rowConstraints>
+			<children>
+				<Label text="Login Id" />
+				<Label text="Password" GridPane.rowIndex="1" />
+				<TextField id="text-field" fx:id="userIDField"
+					GridPane.columnIndex="1">
+					<GridPane.margin>
+						<Insets left="5.0" right="5.0" />
+					</GridPane.margin>
+				</TextField>
+				<PasswordField id="text-field" fx:id="passwordField"
+					GridPane.columnIndex="1" GridPane.rowIndex="1">
+					<GridPane.margin>
+						<Insets left="5.0" right="5.0" />
+					</GridPane.margin>
+				</PasswordField>
+				<Button id="glass-grey" fx:id="signInButton" alignment="CENTER"
+					contentDisplay="CENTER" mnemonicParsing="false" prefHeight="27.0"
+					prefWidth="97.0" text="Sign In" GridPane.columnSpan="2"
+					GridPane.rowIndex="2" onAction="#handleSignInButton"/>
+				<Button id="glass-grey" fx:id="forgotButton" mnemonicParsing="false"
+					text="Forgot Password" GridPane.rowIndex="3" />
+				<Button id="glass-grey" fx:id="registerButton"
+					mnemonicParsing="false" text="User Registration"
+					onAction="#handleRegisterButton"
+					GridPane.columnIndex="1" GridPane.rowIndex="3" />
+			</children>
+			<padding>
+				<Insets right="5.0" />
+			</padding>
+		</GridPane>
+	</center>
+</BorderPane>

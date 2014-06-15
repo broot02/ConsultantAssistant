@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Customers">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Customer" minOccurs="1" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="firstname" type="xs:string"/>
+							<xs:element name="lastname" type="xs:string"/>
+							<xs:element name="phonenumber" type="xs:string"/>
+							<xs:element name="address" type="xs:string"/>
+							<xs:element name="city" type="xs:string"/>
+							<xs:element name="zip" type="xs:int"/>
+							<xs:element name="state" type="xs:string"/>
+							<xs:element name="email" type="xs:string"/>
+							<xs:element name="mailinglist" type="xs:string"/>
+						</xs:sequence>
+						<xs:attribute name="id" type="xs:byte" use="optional"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

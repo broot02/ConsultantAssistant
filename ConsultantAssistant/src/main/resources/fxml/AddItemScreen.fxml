@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="group" fx:id="layoutPane" prefHeight="390.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="root.consultantassistant.frontend.AddItemScreen">
+	<top>
+		<Label id="heading" text="Add Item" BorderPane.alignment="CENTER" />
+	</top>
+	<center>
+		<GridPane prefHeight="222.0" prefWidth="418.0" BorderPane.alignment="CENTER">
+			<columnConstraints>
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="230.0" minWidth="10.0" prefWidth="151.0" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="419.0" minWidth="10.0" prefWidth="111.0" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="419.0" minWidth="10.0" prefWidth="240.0" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="419.0" minWidth="10.0" prefWidth="240.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+			</rowConstraints>
+			<children>
+				<Label prefHeight="16.0" prefWidth="160.0" text="Product Description:" />
+				<Label prefHeight="15.0" prefWidth="64.0" text="Quantity:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+				<Label prefHeight="15.0" prefWidth="35.0" text="Price:" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+				<TextField id="text-field" fx:id="productDescriptionTextField" GridPane.columnIndex="1" GridPane.columnSpan="3" />
+				<TextField id="text-field" fx:id="quantityTextField" prefHeight="27.0" prefWidth="185.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+				<TextField id="text-field" fx:id="priceTextField" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+				<Button id="rich-blue" fx:id="addItemButton" mnemonicParsing="false" onAction="#handleAddItemButton" text="Add" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+				<Button id="rich-blue" fx:id="cancelItemButton" mnemonicParsing="false" onAction="#handleCancelButton" text="Cancel" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+			</children>
+		</GridPane>
+	</center>
+</BorderPane>

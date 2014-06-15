@@ -1,0 +1,372 @@
+/****************************************************
+ * 	This style sheet is to be used with the         *
+ *  consultant assistant application.				*
+ * 	Last Modified: 4/09/14							*
+ * 	Author: Brad Root						        *
+ ****************************************************/
+
+/**********************************************
+ * 			Custom Classes					  *
+ **********************************************/
+#background{
+	-fx-background-color: white;
+}
+#mainScreen{
+	-fx-background-image: url("../images/consultantAssistantBGChrome.png");
+	-fx-background-size: cover;
+	-fx-background-repeat: stretch;		  
+}
+#heading{
+	-fx-text-fill: white;
+	-fx-font-size: 14pt;
+}
+
+#subheading{
+	-fx-text-fill: white;
+	-fx-font-size: 12pt;
+}
+
+#headingBar{
+	-fx-background-color: black;
+	-fx-background-radius: 3.0 ;
+	-fx-border-style: solid ;
+	-fx-border-width: 2.0px;
+	-fx-border-color: black;
+	-fx-border-insets: 0 0 7 0; 
+	-fx-border-radius: 3.0;
+	-fx-background-insets: 0 0 7 0;
+	-fx-padding: 0 0 7 0;
+}
+
+#label-accept{
+	-fx-background-image:url('../images/dialogok.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: right center;   
+}
+#label-decline{
+	-fx-background-image:url('../images/dialogno.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: right center;
+}
+#text-field{
+	-fx-border-color: black;
+	-fx-border-radius: 3.0,3.0,3.0,3.0; 
+	-fx-background-radius: 3.0,3.0,3.0,3.0;
+	-fx-background-insets:1.0,1.0,1.0,1.0;
+	-fx-background-color: lightgray;
+}
+#text-field:focused{
+	-fx-background-color:lightgray, linear-gradient(lightgray, white);  
+}
+#text-field-accept{
+	-fx-background-image:url('../images/dialogok.png');
+ 	-fx-background-repeat: no-repeat;
+  	-fx-background-position: right center;
+	-fx-border-color: black;
+	-fx-border-radius: 3.0,3.0,3.0,3.0; 
+	-fx-background-radius: 3.0,3.0,3.0,3.0;
+	-fx-background-insets:1.0,1.0,1.0,1.0;
+	-fx-background-color: lightgray;
+}
+#text-field-accept:focused{
+	-fx-background-color:lightgray, linear-gradient(lightgray, white);  
+}
+#text-field-decline{
+	-fx-background-image:url('../images/dialogno.png');
+  	-fx-background-repeat: no-repeat;
+  	-fx-background-position: right center;
+	-fx-border-color: black;
+	-fx-border-radius: 3.0,3.0,3.0,3.0; 
+	-fx-background-radius: 3.0,3.0,3.0,3.0;
+	-fx-background-insets:1.0,1.0,1.0,1.0;
+	-fx-background-color: lightgray;
+}
+#text-field-decline:focused{
+	-fx-background-color:lightgray, linear-gradient(lightgray, white);  
+}
+
+#combo-box{
+	-fx-border-color: black;
+	-fx-border-radius: 3.0,3.0,3.0,3.0; 
+	-fx-background-radius: 3.0,3.0,3.0,3.0;
+	-fx-background-insets:1.0,1.0,1.0,1.0;
+	-fx-background-color: lightgray;	
+	
+}
+
+
+#combo-box .base, .combo-box:editable .text-field{
+	-fx-border-radius: 3.0,3.0,3.0,3.0; 
+	-fx-background-radius: 3.0,3.0,3.0,3.0;
+	-fx-background-color: lightgray;
+}
+#combo-box .base, .combo-box:editable .text-field:focused{
+	-fx-background-color: linear-gradient(lightgray, white); 
+	
+}
+#combo-box .base, .combo-box:editable .arrow-button{
+	-fx-background-color: transparent ;
+}
+
+#combo-box ,.popup, .combo-box-popup .list-view:focused .list-cell:filled:focused:selected:hovered{
+	-fx-border-radius: 3.0,3.0,3.0,3.0; 
+	-fx-background-radius: 3.0,3.0,3.0,3.0;
+	-fx-background-color: lightgray;
+	
+}
+
+#combo-box:focused{
+	-fx-background-color: linear-gradient(lightgray, white);  
+}
+
+
+#check-box{
+	-fx-font: 1.0em "Lucida Sans";
+	-fx-effect: dropshadow(gaussian, black,1.0,0.0,0.0,0.0,1.0);
+	
+}
+#glass-grey {
+    -fx-background-color:
+        #c3c4c4,
+        linear-gradient(#d6d6d6 50.0%, white 100.0%),
+        radial-gradient(center 50.0% -40.0%, radius 200.0%, #e6e6e6 45.0%, rgba(230.0,230.0,230.0,0.0) 50.0%);
+    -fx-background-radius: 30.0;
+    -fx-background-insets: 0.0,1.0,1.0;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0.0,0.0,0.0,0.6) , 3.0, 0.0 , 0.0 , 1.0 );
+}
+#glass-grey:hover,active,focused{
+	-fx-background-color:
+        #c3c4c4,
+        linear-gradient(#d6d6d6 50.0%, black 100.0%),
+        radial-gradient(center 50.0% -40.0%, radius 200.0%, #e6e6e6 45.0%, rgba(230.0,230.0,230.0,0.0) 50.0%);
+}
+#glass-grey:pressed{
+	-fx-background-color : linear-gradient(gray 25.0%, black 75.0%);
+	-fx-text-fill: white; 
+}
+#rich-blue {
+    -fx-background-color:
+        #000000,
+        linear-gradient(#7ebcea, #2f4b8f),
+        linear-gradient(#426ab7, #263e75),
+        linear-gradient(#395cab, #223768);
+    -fx-background-insets: 0.0 1.0 2.0 3.0;
+    -fx-background-radius: 4.0;
+    -fx-padding: 12.0 30.0 12.0 30.0;
+    -fx-text-fill: white;
+    -fx-font-size: 12.0px;
+
+
+}
+#rich-blue:focused{
+	-fx-text-fill: black;
+}
+#rich-blue Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0.0,0.0,0.0,0.8) , 0.0, 0.0 , 0.0 , 1.0);
+}
+#rich-blue:hover{
+	-fx-text-fill:lightgray;
+}
+#rich-blue:pressed{
+	-fx-text-fill: black;
+}
+
+#group{	
+	-fx-border-insets: 5.0;
+	-fx-background-color:darkkhaki ; 
+		 /*radial-gradient(center 50.0% 0.0%, radius 100.0%, white, lightgray);*/
+	-fx-background-radius: 4.0;  
+}
+
+#addButton{
+	-fx-background-image: url("../images/add.png");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: left;
+	-fx-background-size: 100.0% 100.0%;
+	-fx-background-color: transparent;
+	-fx-background-insets: 2.0 2.0 3.0 3.0;
+	
+}
+#addButton:hover{
+	-fx-background-size: 110.0% 130.0%; 
+}
+
+
+#minusButton{
+	-fx-background-image: url("../images/minus.png");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: left;
+	-fx-background-size: 100.0% 100.0%;
+	-fx-background-color: transparent;
+	-fx-background-insets: 2.0 2.0 3.0 3.0;	
+}
+
+#minusButton:hover{
+	-fx-background-size: 110.0% 130.0%;
+}
+
+
+#deleteButton{
+	-fx-background-image: url("../images/delete.png");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: left;
+	-fx-background-size: 100.0% 100.0%;
+	-fx-background-color: transparent;
+	-fx-background-insets: 2.0 2.0 3.0 3.0;	
+}
+
+#deleteButton:hover{
+	-fx-background-size: 110.0% 130.0%; 
+}
+
+#editButton{
+	-fx-background-image: url("../images/edit.png");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: left;
+	-fx-background-size: 100.0% 100.0%;
+	-fx-background-color: transparent;
+	-fx-background-insets: 2.0 2.0 3.0 3.0;	
+	
+}
+
+#editButton:hover{
+	-fx-background-size: 110.0% 130.0%; 
+}
+
+#connected{
+	-fx-background-image: url("../images/connected.png");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: left;
+	-fx-background-size: 100.0% 100.0%;
+	-fx-background-color: green;
+	-fx-background-insets: 2.0,2.0,3.0,3.0;
+}
+/*This pseudo class is used with th */
+#disconnected{
+	-fx-background-image: url("../images/disconnected.png");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: left;
+	-fx-background-size: 100.0% 100.0%;
+	-fx-background-color: red;
+	-fx-background-insets: 2.0,2.0,3.0,3.0;
+}
+/************************************
+ *  			Menu Bar		    *
+ ************************************/
+.menu .label{
+ 	-fx-text-fill: white;
+ }
+.menu-bar{
+	-fx-background-color: black;
+	-fx-background-insets: 0.0 0.0 2.0 0.0;
+}
+.menu-bar .label{
+	-fx-text-fill: white;
+}
+
+.menu-bar .container .menu:openvertically{
+	-fx-background-color: black;
+	-fx-background-insets:  0.0 0.0 2.0 0.0;
+}
+
+.menu-bar .container .menu:openvertically .label{
+	-fx-text-fill: white;
+}
+
+.menu-bar .container .menu:showing .label{
+	-fx-text-fill: white;
+}  
+
+.context-menu{
+	-fx-background-color: black;
+	-fx-text-fill: white;
+	-fx-border-color: white;
+}
+
+.context-menu .separator .line{
+	-fx-background-color: white;
+}
+
+.context-menu:focused .label{
+	-fx-text-fill: white;
+}
+.menu-item{
+	-fx-background-color: black;
+}
+
+.menu-item .label{
+	-fx-text-fill: white;
+}
+
+.menu-item:focused .label{
+	-fx-background-color:blue;
+}
+/********************************
+ * 			Tool Bar			*
+ ********************************/		
+.tool-bar{
+	-fx-background-color:black;
+	-fx-background-insets:2.0 0.0 0.0 0.0;
+}
+/********************************
+ * 			Table View			*
+ ********************************/
+.table-view .column-header .label{
+	-fx-text-fill:white;	
+}
+.table-view .column-header{
+	-fx-background-color:black;
+}
+.table-view .column-header .arrow{
+	-fx-background-color:white;
+}
+.table-view .column-header .separator{
+	-fx-border-color:white;
+}
+/****************************
+ * 	Horizontal Separator	*
+ ****************************/
+.separator:horizontal .line{
+	-fx-border-radius: 3.0,3.0,3.0,3.0;
+	-fx-border-color: black;	
+}
+/*****************************
+ * 			Text			 *
+ *****************************/
+.text{
+	-fx-font: 1.1em "Tahoma";
+	-fx-effect: dropshadow(gaussian, black,1.0,0.0,0.0,0.0,1.0);	
+}
+/********************************
+ * 		Dialogs					*
+ ********************************/
+ /*.dialog > * > .window-header{
+ 	-fx-background-color: black;
+ }
+ .dialog > * > .window-header .title{
+ 	-fx-text-fill: white;
+ }
+ .dialog > * > .content-pane{
+ 	-fx-background-color: darkkhaki;
+ }
+ .lightweight-dialog-background{
+ 	-fx-background-color:darkkhaki; 
+ }
+ .dialog > * > .menu-bar{
+ 	-fx-background-color: black;
+ }*/
+ /***********************************
+  * 			Pop Over			*
+  ***********************************/
+  .popover{
+  	-fx-background-color: darkkhaki;
+  }
+  
+  .popover > .border{
+  	-fx-background-color:  black;
+  }
+
+
+
+

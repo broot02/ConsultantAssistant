@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.*?>
+
+<BorderPane id="" styleClass="root" xmlns:fx="http://javafx.com/fxml/1"
+	xmlns="http://javafx.com/javafx/2.2" fx:controller="root.consultantassistant.frontend.NewCustomerScreen">
+	<!-- TODO Add Nodes -->
+	<bottom>
+		<Pane id="" prefHeight="538.0" prefWidth="596.0">
+			<children>
+				<TextField id="text-field" fx:id="fNameTextField" layoutX="14.0"
+					layoutY="157.0" minHeight="-1.0" minWidth="-1.0" prefWidth="200.0">
+					<tooltip>
+						<Tooltip text="Enter customer's first name." />
+					</tooltip>
+				</TextField>
+				<TextField id="text-field" fx:id="lNameTextField" layoutX="287.0"
+					layoutY="157.0" prefWidth="200.0">
+					<tooltip>
+						<Tooltip text="Enter customer's last name." />
+					</tooltip>
+				</TextField>
+				<TextField id="text-field" fx:id="addressTextField"
+					layoutX="12.0" layoutY="216.0" prefWidth="392.0">
+					<tooltip>
+						<Tooltip text="Enter customer's address." />
+					</tooltip>
+				</TextField>
+				<TextField id="text-field" fx:id="cityTextField" layoutX="12.0"
+					layoutY="275.0" prefWidth="200.0">
+					<tooltip>
+						<Tooltip text="Enter customer's city." />
+					</tooltip>
+				</TextField>
+				<ComboBox id="combo-box" fx:id="stateComboBox" layoutX="244.0"
+					layoutY="275.0" prefWidth="155.0" promptText="" visibleRowCount="10">
+					<items>
+						<FXCollections fx:factory="observableArrayList">
+							<String fx:value="Alabama" />
+							<String fx:value="Alaska" />
+							<String fx:value="Arizona" />
+							<String fx:value="Arkansas" />
+							<String fx:value="California" />
+							<String fx:value="Colorado" />
+							<String fx:value="Connecticut" />
+							<String fx:value="Delaware" />
+							<String fx:value="Florida" />
+							<String fx:value="Georgia" />
+							<String fx:value="Hawaii" />
+							<String fx:value="Idaho" />
+							<String fx:value="Illinois" />
+							<String fx:value="Indiana" />
+							<String fx:value="Iowa" />
+							<String fx:value="Kansas" />
+							<String fx:value="Kentucky" />
+							<String fx:value="Louisiana" />
+							<String fx:value="Maine" />
+							<String fx:value="Maryland" />
+							<String fx:value="Massachusettes" />
+							<String fx:value="Michigan" />
+							<String fx:value="Minnesota" />
+							<String fx:value="Mississippi" />
+							<String fx:value="Missouri" />
+							<String fx:value="Montana" />
+							<String fx:value="Nebraska" />
+							<String fx:value="Nevada" />
+							<String fx:value="New Hampshire" />
+							<String fx:value="New Jersey" />
+							<String fx:value="New Mexico" />
+							<String fx:value="New York" />
+							<String fx:value="North Carolina" />
+							<String fx:value="North Dakota" />
+							<String fx:value="Ohio" />
+							<String fx:value="Oklahoma" />
+							<String fx:value="Oregon" />
+							<String fx:value="Pennsylvania" />
+							<String fx:value="Rhode Island" />
+							<String fx:value="South Carolina" />
+							<String fx:value="South Dakota" />
+							<String fx:value="Tennessee" />
+							<String fx:value="Texas" />
+							<String fx:value="Utah" />
+							<String fx:value="Vermont" />
+							<String fx:value="Virginia" />
+							<String fx:value="Washington" />
+							<String fx:value="West Virginia" />
+							<String fx:value="Wisconsin" />
+							<String fx:value="Wyoming" />
+						</FXCollections>
+					</items>
+					<tooltip>
+						<Tooltip text="Select customer's state." />
+					</tooltip>
+				</ComboBox>
+				<TextField id="text-field" fx:id="zipTextField" layoutX="471.0"
+					layoutY="277.0" prefHeight="22.8984375" prefWidth="106.0">
+					<tooltip>
+						<Tooltip text="Enter customer's zip code." />
+					</tooltip>
+				</TextField>
+				<TextField id="text-field" fx:id="emailTextField" layoutX="12.0"
+					layoutY="336.0" prefHeight="22.8984375" prefWidth="293.0">
+					<tooltip>
+						<Tooltip text="Enter customer's email address." />
+					</tooltip>
+				</TextField>
+				<TextField id="text-field" fx:id="phoneNumberTextField"
+					layoutX="355.0" layoutY="336.0" prefHeight="22.8984375" prefWidth="232.0">
+					<tooltip>
+						<Tooltip text="Enter customer's phone number: (xxx)xxx-xxxx" />
+					</tooltip>
+				</TextField>
+				<Button id="rich-blue" layoutX="127.0" layoutY="459.0"
+					mnemonicParsing="false" text="Submit">
+					<effect>
+						<Reflection fraction="0.8" />
+					</effect>
+					<tooltip>
+						<Tooltip text="Submit customer information." />
+					</tooltip>
+				</Button>
+				<Button id="rich-blue" layoutX="318.0" layoutY="459.0"
+					mnemonicParsing="false" text="Cancel">
+					<effect>
+						<Reflection fraction="0.8" />
+					</effect>
+					<tooltip>
+						<Tooltip text="Cancel, and Return to Previous Screen." />
+					</tooltip>
+				</Button>
+				<Label layoutX="12.0" layoutY="187.0" text="First Name" />
+				<Label layoutX="287.0" layoutY="187.0" text="Last Name" />
+				<Label layoutX="12.0" layoutY="251.0" text="Address" />
+				<Label layoutX="13.0" layoutY="312.0" text="City" />
+				<Label layoutX="244.0" layoutY="315.0" text="State" />
+				<Label layoutX="471.0" layoutY="313.0" text="Zip" />
+				<Label layoutX="13.0" layoutY="370.0" text="Email" />
+				<Label layoutX="355.0" layoutY="373.0" text="Phone Number" />
+				<Text id="heading" layoutX="190.0" layoutY="53.0" strokeType="OUTSIDE"
+					strokeWidth="0.0" text="New Customer Registration" underline="false">
+					<effect>
+						<Reflection fraction="0.6" topOffset="5.0" />
+					</effect>
+				</Text>
+				<ImageView fitHeight="96.8984375" fitWidth="96.8984375"
+					layoutX="20.0" layoutY="0.0" opacity="1.0" pickOnBounds="true"
+					preserveRatio="true">
+					<effect>
+						<Reflection fraction="0.6" topOffset="2.0" />
+					</effect>
+					<image>
+						<Image url="@newconsultant.png" />
+					</image>
+				</ImageView>
+				<CheckBox id="check-box" fx:id="mailingListCheckBox"
+					layoutX="14.0" layoutY="387.0" mnemonicParsing="false" prefHeight="39.9609375"
+					prefWidth="200.0" text="Add to E-Mailing List" />
+			</children>
+			<stylesheets>
+				<URL value="@application.css" />
+			</stylesheets>
+		</Pane>
+	</bottom>
+	<stylesheets>
+		<URL value="@application.css" />
+	</stylesheets>
+</BorderPane>
