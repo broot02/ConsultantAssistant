@@ -19,7 +19,7 @@ public class Main extends Application {
 		mainController.loadScreen("RegistrationScreen",
 				"/fxml/RegistrationScreen.fxml");
 		mainController.loadScreen("OrderScreen", "/fxml/OrderScreen.fxml");
-		mainController.setScreen("LoginScreen");
+		mainController.setScreen("OrderScreen");
 
 		StackPane root = new StackPane();
 		root.setMinSize(0, 0);
